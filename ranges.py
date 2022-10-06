@@ -9,15 +9,16 @@ def ranges():
   #you can do this instead
     # print(range(0,12))
     # print(list(range(13,25000)))
-    my_list = list(range(0,78))
-    for number in my_list:
-      # number 2 == % even
-      # number 3 == % open
-      if number % 2 == 0:
-        print(f"number {number} is odd")
-      elif number % 3 == 1:
-        print(f"number {number} is odd")
-      
+    # my_list = list(range(0,78))
+    # for number in my_list:
+    #   # number 2 == % even
+    #   # number 3 == % open
+    #   if number % 2 == 0:
+    #     print(f"number {number} is even")
+    #   elif number % 2 == 1:
+    #     print(f"number {number} is odd")
+    print(list(range(0,100,10)))
+  
   #   Note that this is a generator function, so to actually get a list out of it, we need to cast it to a list with list(). What is a generator? Its a special type of function that will generate information and not need to save it to memory. We haven't talked about functions or generators yet, so just keep this in your notes for now, we will discuss this in much more detail in later on in your training!
   
   
@@ -38,18 +39,33 @@ def ranges():
   
   # Range Practice #1
   # Create a list consisting of all the numbers from 2500 to 2585 (inclusive). Store this list in the variable my_list.
-  
-  
+    # my_list = (list(range(2500,2585))
+     
   
   # Range Practice #2
   # Using the range() function, create in a single line of code a list consisting of all numbers that are multiples of 3 from 3 to 300 (inclusive). Store this list in the variable my_list.
-  
+    # print(list(range(3,3,300)))
   
   
   # Range Practice #3
   # Use the range() function and a loop to add the squares of all the numbers from 1 to 15 (inclusive). Store the result in a variable called sum_squares.
-  
-  
+
+    #   sum_squares = 0 
+    #     for number in range:
+    #       sum_squares = sum_squares + number **2
+    # print(sum_squares)
+
+
+
+  # add a range of numbers  1-150 , using a for loop, store the result in a variable called sum 
+    sum = 0 
+    for number in range(1,150):
+      # sum = sum + number
+      sum += number
+      
+    print(sum)
+    
+
   
   # For this purpose:
   
@@ -58,5 +74,4 @@ def ranges():
   # For each of these values, find its squared value (power of 2). You may need to create intermediate variables (optionally).
   
   # Sum all the squared values obtained. Accumulate the sum in the variable sum_squares.
-  
   

@@ -2,7 +2,10 @@ def enum():
   # enumerate
   print("enumerate")
   # enumerate is a very useful function to use with for loops. Let's imagine the following situation:
-  
+  my_list = ['a','b','c']
+  print(my_list)
+  for index, item in enumerate(range(0,50)):
+    print(index,item)
   # index_count = 0
   
   # for letter in 'abcde':
